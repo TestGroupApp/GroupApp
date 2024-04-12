@@ -74,3 +74,4 @@ jobs:
           command: |
             ssh -p 5454 -o StrictHostKeyChecking=no groupca@ec2-16-171-59-97.eu-north-1.compute.amazonaws.com "export SERVER=\"${SERVER}\"; export IMAGE_NAME=\"${IMAGE_NAME}\"; export PRIVATE_KEY=\"${PRIVATE_KEY}\"; rm -rf ~/FinalGroupApp/; git clone https://github.com/TestGroupApp/FinalGroupApp.git; source FinalGroupApp/deploy.sh"
 
+
